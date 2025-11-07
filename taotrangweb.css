@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 228, 228);
+}
+a{
+    text-decoration: none;
+    color: rgb(224, 211, 211);
+}
+.box {
+    background-color: blue;
+    padding: 20px;
+    margin: 3px;
+    border-radius: 4px;
+}
+.title{
+    color: rgb(141, 63, 63);
+    margin-top: 0;
+}
+.btn {
+    background-color: darkblue;
+    color: rgb(141, 63, 63);
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: rgb(25, 125, 42);
+}
+#header {
+    background-color: rgb(39, 61, 68);
+    text-align: center;
+    color: rgb(245, 240, 240);
+    padding: 10px;
+}
+#header h1 {
+    margin: 0;
+    font-size: small;
+}
+#menu {
+    background-color: rgb(0, 0, 0);
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#menu ul li {
+    position: relative; /* định vị lại vị trí của menu con */
+    padding: 10px;
+}
+#menu ul li:hover {
+    background-color:yellow(104, 15, 15);
+}
+#menu ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+#menu ul li ul {
+    display: none; /* ẩn menu con ban đầu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: pink(0, 0, 0);
+    min-width: 150px;
+    z-index: 100;
+}
+#menu ul li:hover > ul {
+    display: flex; /* hiển thị menu con khi hover */
+    flex-direction: column;
+}
+#menu ul li ul ul {
+    top: 0;
+    left: 100%;
+}
+#main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+#content {
+    flex: 3;
+}
+#sidebar {
+    flex: 1;
+}
+#footer {
+    background-color: rgb(39, 61, 68);
+    text-align: center;
+    color: rgb(245, 240, 240);
+    padding: 15px;
+    margin-top: 20px;
+    display: block;
+}
+#footer p {
+    margin: 0;
+}
